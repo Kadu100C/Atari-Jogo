@@ -2,59 +2,33 @@ using UnityEngine;
 
 public class tanqueMovement : MonoBehaviour
 {
-
-    [Header("Configuracoes de Movimento")]
-    [Tooltip("Velocidade de movimento para frente (Tecla W)")]
-    public float velocidadeMovimento = 10f;
-
-    [Tooltip("Velocidade de rotacao (Teclas A e D)")]
-    public float velocidadeRotacao = 100f;
+    
+    public float moveSpeed = 1f;
+    public float rotationSpeed = 180f;
 
     private Rigidbody rb;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
 
-        
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-    }
+        }
 
     void FixedUpdate()
     {
-        MoverParaFrente();
-        Rotacionar();
-    }
+        // Horizontal = A/D ou Setas Esquerda/Direita
+        float horizontal = Input.GetAxis("Horizontal");
 
-    void MoverParaFrente()
-    {
-        
-        if (Input.GetKey(KeyCode.W))
-        {
-            
-            Vector3 deslocamento = transform.forward * velocidadeMovimento * Time.fixedDeltaTime;
-            rb.MovePosition(rb.position + deslocamento);
-        }
-    }
+        // Vertical = W/S ou Setas Cima/Baixo
+        float vertical = Input.GetAxis("Vertical");
 
-    void Rotacionar()
-    {
-        
-        float direcaoRotacao = 0f;
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            direcaoRotacao = 1f;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            direcaoRotacao = -1f;
-        }
-
-        
-        float grausParaGirar = direcaoRotacao * velocidadeRotacao * Time.fixedDeltaTime;
-        Quaternion deltaRotation = Quaternion.Euler(0f, grausParaGirar, 0f);
-        
+        // Rotaciona no eixo Y
+        Quaternion deltaRotation = Quaternion.Euler(0f, horizontal * rotationSpeed * Time.fixedDeltaTime, 0f);
         rb.MoveRotation(rb.rotation * deltaRotation);
+
+   Vector3 velocity = transform.right* vertical * moveSpeed;
+
+
+rb.linearVelocity = velocity;
     }
 }
