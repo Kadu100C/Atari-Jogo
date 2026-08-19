@@ -14,6 +14,10 @@ public class tanqueMovement : MonoBehaviour
     public float fireCooldown = 1f; // Tempo entre tiros
 private float nextFireTime = 0f;
 
+    public string botaoAtirar;
+    public string mhorizontal;
+    public string mvertical;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,7 +25,7 @@ private float nextFireTime = 0f;
 
     void Update()
 {
-    if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
+    if (Input.GetButtonDown(botaoAtirar) && Time.time >= nextFireTime)
     {
         // Define quando poderá atirar novamente
         nextFireTime = Time.time + fireCooldown;
@@ -48,8 +52,8 @@ private float nextFireTime = 0f;
     void FixedUpdate()
     {
         // Movimento
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxis(mhorizontal);
+        float vertical = Input.GetAxis(mvertical);
 
         // Rotação
         Quaternion deltaRotation = Quaternion.Euler(

@@ -979,6 +979,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063135309}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &6403213379703436365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2441791233410272434, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: mvertical
+      value: Vertical2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2441791233410272434, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: botaoAtirar
+      value: Fire2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2441791233410272434, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: mhorizontal
+      value: Horizontal2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666697639493837014, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_Name
+      value: tanque (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816904829711830286, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93cdbc69edca4d54489c18709e445d84, type: 3}
 --- !u!1001 &6871131544466650259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -987,6 +1056,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2441791233410272434, guid: 4a916ea11ca678a4697464b84dd7b176, type: 3}
+      propertyPath: mvertical
+      value: Vertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 2441791233410272434, guid: 4a916ea11ca678a4697464b84dd7b176, type: 3}
+      propertyPath: botaoAtirar
+      value: Fire1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2441791233410272434, guid: 4a916ea11ca678a4697464b84dd7b176, type: 3}
+      propertyPath: mhorizontal
+      value: Horizontal
+      objectReference: {fileID: 0}
     - target: {fileID: 3666697639493837014, guid: 4a916ea11ca678a4697464b84dd7b176, type: 3}
       propertyPath: m_Name
       value: tanque (1)
@@ -1044,4 +1125,5 @@ SceneRoots:
   - {fileID: 1013997649}
   - {fileID: 1600956347}
   - {fileID: 6871131544466650259}
+  - {fileID: 6403213379703436365}
   - {fileID: 466428930}
