@@ -327,8 +327,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.24012285, z: 1}
-  m_Center: {x: 0, y: -0.7840786, z: 0}
+  m_Size: {x: 1, y: 0.98878217, z: 1}
+  m_Center: {x: 0, y: -0.4097489, z: 0}
 --- !u!54 &243430255711111156
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -363,17 +363,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3666697639493837014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88e546dc962e9ae428293c774522edd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::tanqueMovement
-  moveSpeed: 10
+  moveSpeed: 6
   rotationSpeed: 180
   spawnPoint: {fileID: 1843320932130061304}
   bulletPrefab: {fileID: 829021091417131604, guid: ee80dcf7f6d68e84c94ac40b1c63df06, type: 3}
   bulletSpeed: 10
   fireCooldown: 1
+  botaoAtirar: Fire2
+  mhorizontal: Horizontal2
+  mvertical: Vertical2
 --- !u!1 &7732954475406272665
 GameObject:
   m_ObjectHideFlags: 0
