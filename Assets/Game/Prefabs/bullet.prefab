@@ -126,7 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8403e6c8be71d9445a42456308c5998e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  bulletFX: {fileID: 2923319382051689713, guid: 8c417d71aa599da439d5e8be84a3c3d7, type: 3}
+  bulletFX: {fileID: 5551718882146614446, guid: ca5678a67971360408484fc2051d9d2e, type: 3}
+  ScoreA: {fileID: 0}
+  ScoreB: {fileID: 0}
 --- !u!54 &4833407654545218444
 Rigidbody:
   m_ObjectHideFlags: 0

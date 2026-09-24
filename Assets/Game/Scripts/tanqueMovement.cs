@@ -12,7 +12,7 @@ public class tanqueMovement : MonoBehaviour
     private Rigidbody rb;
 
     public float fireCooldown = 1f; // Tempo entre tiros
-private float nextFireTime = 0f;
+    private float nextFireTime = 0f;
 
     public string botaoAtirar;
     public string mhorizontal;
@@ -24,30 +24,30 @@ private float nextFireTime = 0f;
     }
 
     void Update()
-{
-    if (Input.GetButtonDown(botaoAtirar) && Time.time >= nextFireTime)
     {
-        // Define quando poderá atirar novamente
-        nextFireTime = Time.time + fireCooldown;
-
-        GameObject bullet = Instantiate(
-            bulletPrefab,
-            spawnPoint.position,
-            spawnPoint.rotation
-        );
-
-        Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-
-        if (bulletRb != null)
+        if (Input.GetButtonDown(botaoAtirar) && Time.time >= nextFireTime)
         {
-            // Se estiver usando Unity 6
-            bulletRb.linearVelocity = spawnPoint.right * bulletSpeed;
+            // Define quando poderá atirar novamente
+            nextFireTime = Time.time + fireCooldown;
 
-            // Para versões anteriores:
-            // bulletRb.velocity = spawnPoint.right * bulletSpeed;
+            GameObject bullet = Instantiate(
+                bulletPrefab,
+                spawnPoint.position,
+                spawnPoint.rotation
+            );
+
+            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+
+            if (bulletRb != null)
+            {
+                // usa spawnPoint.right para o tiro ir na direção do Eixo X local
+                bulletRb.linearVelocity = spawnPoint.right * bulletSpeed;
+
+                // Para versões anteriores da Unity:
+                // bulletRb.velocity = spawnPoint.right * bulletSpeed;
+            }
         }
     }
-}
 
     void FixedUpdate()
     {
@@ -55,7 +55,7 @@ private float nextFireTime = 0f;
         float horizontal = Input.GetAxis(mhorizontal);
         float vertical = Input.GetAxis(mvertical);
 
-        // Rotação
+        // Rotação no eixo Y
         Quaternion deltaRotation = Quaternion.Euler(
             0f,
             horizontal * rotationSpeed * Time.fixedDeltaTime,
@@ -64,10 +64,9 @@ private float nextFireTime = 0f;
 
         rb.MoveRotation(rb.rotation * deltaRotation);
 
-        // Anda para frente e para trás
-        Vector3 velocity = transform.right * vertical * moveSpeed;
+        // Movimento no Eixo X local do tanque
+        Vector3 velocity = transform.forward * vertical * moveSpeed;
 
-        // Se sua versão do Unity não tiver linearVelocity, use rb.velocity
         rb.linearVelocity = velocity;
     }
 }

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &9205975911953105214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6515776036832148633, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: mvertical
+      value: Vertical2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515776036832148633, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: botaoAtirar
+      value: Fire2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6515776036832148633, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: mhorizontal
+      value: Horizontal2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8119872
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0017777559
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9764421
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.707107
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417165513772311890, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7900650822107496424, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
+      propertyPath: m_Name
+      value: RiverOtter 2 Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 15cd55c2f5cb7fb44a5c89c9e4c602f9, type: 3}
