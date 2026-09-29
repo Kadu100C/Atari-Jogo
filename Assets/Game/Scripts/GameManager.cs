@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-
+    public GameObject videoInicio;
+    public GameObject videoFinal;
 
     public GameObject ScoreA;
     public GameObject ScoreB;
@@ -34,7 +35,7 @@ public class GameManager : MonoBehaviour
             Retornar.SetActive(true);
             TankA.GetComponent<tanqueMovement>().enabled = false;
             TankB.GetComponent<tanqueMovement>().enabled = false;
-            
+            videoFinal.SetActive(true);
 
             
         
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
             Retornar.SetActive(true);
             TankA.GetComponent<tanqueMovement>().enabled = false;
             TankB.GetComponent<tanqueMovement>().enabled = false;
-
+            videoFinal.SetActive(true);
         }
 
     }
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
 
             TankA.GetComponent<tanqueMovement>().enabled = true;
             TankB.GetComponent<tanqueMovement>().enabled = true;
+            videoInicio.SetActive(false);
         }
 
         if(Input.GetButton("Retornar") && (ScoreANum >= 5 || ScoreBNum >= 5))
