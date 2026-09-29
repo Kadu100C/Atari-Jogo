@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     public void termina()
         {
         
-        if (ScoreANum == 5)
+        if (ScoreANum >= 5)
         {
             
             Debug.Log("A ganhou");
@@ -34,14 +34,14 @@ public class GameManager : MonoBehaviour
             Retornar.SetActive(true);
             TankA.GetComponent<tanqueMovement>().enabled = false;
             TankB.GetComponent<tanqueMovement>().enabled = false;
-
+            
 
             
         
 
         }
 
-        if (ScoreBNum == 5)
+        if (ScoreBNum >= 5)
         {
             Debug.Log("B ganhou");
             WinB.SetActive(true);
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             TankB.GetComponent<tanqueMovement>().enabled = true;
         }
 
-        if(Input.GetButton("Retornar") && (ScoreANum == 5 || ScoreBNum == 5))
+        if(Input.GetButton("Retornar") && (ScoreANum >= 5 || ScoreBNum >= 5))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         } 
